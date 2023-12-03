@@ -1,0 +1,22 @@
+# 因为 Vercel 对 GitHub 组织项目的部署是收费的，
+# 为了绕过限制，可以将组织的项目同步到 GitLab 个人项目。
+
+name: Push to GitLab
+
+on:
+  - push
+  - delete
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: Git Repo Sync
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: adambirds/sync-github-to-gitlab-action@v1.1.0
+        with:
+          destination_repository: git@gitlab.com:Lifeni/Playground.git
+          destination_branch_name: main
+          destination_ssh_key: ${{ secrets.GITLAB_SSH_KEY }}
