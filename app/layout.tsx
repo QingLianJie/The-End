@@ -1,5 +1,8 @@
-import type { Metadata } from 'next'
+import ColorMode from '@/components/theme/ColorMode'
 import ThemeRegistry from '@/components/theme/ThemeRegistry'
+import { Box } from '@mui/joy'
+import type { Metadata } from 'next'
+import * as React from 'react'
 
 export const metadata: Metadata = {
   title: '清廉街 Playground',
@@ -12,9 +15,26 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-hans">
+    <html lang="zh-hans" data-joy-color-scheme="light">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body>
-        <ThemeRegistry>{children}</ThemeRegistry>
+        <ColorMode />
+        <ThemeRegistry>
+          <Box
+            sx={{
+              display: 'flex',
+              flex: 1,
+              flexDirection: 'column',
+              p: 2,
+              gap: 1,
+              height: '100vh',
+            }}
+          >
+            {children}
+          </Box>
+        </ThemeRegistry>
       </body>
     </html>
   )
