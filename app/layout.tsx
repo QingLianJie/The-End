@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import * as React from 'react'
 
 export const metadata: Metadata = {
-  title: '清廉街 Playground',
+  title: '清廉街',
   description: '希望这个网站可以帮到大家，欢迎来贡献代码。',
 }
 
@@ -27,7 +27,6 @@ export default function RootLayout({
               display: 'flex',
               flex: 1,
               flexDirection: 'column',
-              p: 2,
               gap: 1,
               height: '100vh',
             }}
