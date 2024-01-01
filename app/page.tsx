@@ -2,6 +2,7 @@ import { Header } from '@/components/Header'
 import InfoRoundedIcon from '@mui/icons-material/InfoRounded'
 import { Alert, Box, Card, CardContent, Grid, Link, Typography } from '@mui/joy'
 import NextLink from 'next/link'
+import { DOCS_SITE } from './const'
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
               color="neutral"
               startDecorator={<InfoRoundedIcon color="primary" />}
               endDecorator={
-                <NextLink href="/blog/hello-goodbye" passHref>
-                  <Link level="body-sm">了解更多</Link>
-                </NextLink>
+                <Link href={`${DOCS_SITE}/blog/hello-goodbye`} level="body-sm">
+                  了解更多
+                </Link>
               }
               sx={{ filter: 'drop-shadow(0 0.5rem 1rem #00000018)' }}
             >
@@ -41,12 +42,7 @@ export default function Home() {
               sx={{ filter: 'drop-shadow(0 0.5rem 1rem #00000018)' }}
             >
               <CardContent>
-                <Typography
-                  level="title-md"
-                  // startDecorator={<GetAppRoundedIcon />}
-                >
-                  获取数据
-                </Typography>
+                <Typography level="title-md">获取数据</Typography>
                 <Typography level="body-xs">
                   下载脱敏后的课程和成绩数据库文件。
                 </Typography>
@@ -59,44 +55,7 @@ export default function Home() {
               sx={{ filter: 'drop-shadow(0 0.5rem 1rem #00000022)' }}
             >
               <CardContent>
-                <Typography
-                  level="title-md"
-                  // startDecorator={<DataObjectRoundedIcon />}
-                >
-                  开源主页
-                </Typography>
-                <Typography level="body-xs"></Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={4}>
-            <Card
-              variant="outlined"
-              sx={{ filter: 'drop-shadow(0 0.5rem 1rem #00000022)' }}
-            >
-              <CardContent>
-                <Typography
-                  level="title-md"
-                  // startDecorator={<DataObjectRoundedIcon />}
-                >
-                  开源主页
-                </Typography>
-                <Typography level="body-xs"></Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={4}>
-            <Card
-              variant="outlined"
-              sx={{ filter: 'drop-shadow(0 0.5rem 1rem #00000022)' }}
-            >
-              <CardContent>
-                <Typography
-                  level="title-md"
-                  // startDecorator={<DataObjectRoundedIcon />}
-                >
-                  开源主页
-                </Typography>
+                <Typography level="title-md">开源主页</Typography>
                 <Typography level="body-xs"></Typography>
               </CardContent>
             </Card>
