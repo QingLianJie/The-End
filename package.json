@@ -1,8 +1,8 @@
 {
-  "name": "qing-docs",
-  "displayName": "清廉街 Docs",
+  "name": "the-end",
+  "displayName": "清廉街 The End",
   "version": "0.1.0",
-  "description": "清廉街的博客和文档",
+  "description": "清廉街，不再维护，但不是结束。",
   "private": true,
   "license": "MIT",
   "scripts": {

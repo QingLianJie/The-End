@@ -1,3 +1,3 @@
-### 清廉街 Docs
+### 清廉街 The End
 
-> 测试地址：https://docs.qing-dev.dist.run
+> 测试地址：https://the-end.dist.run
