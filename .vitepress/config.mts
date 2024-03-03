@@ -9,34 +9,35 @@ export default defineConfig({
   themeConfig: {
     logo: '/favicon.svg',
     nav: [
-      { text: '历史', link: '/' },
-      { text: '数据', link: '/download' },
-      { text: '开发', link: '/developer' },
+      { text: '历史', link: '/历史/第一版' },
+      { text: '数据', link: '/数据/下载数据' },
+      { text: '开发', link: '/开发/成为一名开发者' },
     ],
     sidebar: [
       {
+        text: '写在前面',
+        items: [{ text: '清廉街不再维护', link: '/' }],
+      },
+      {
         text: '历史',
         items: [
-          { text: '写在前面', link: '/' },
-          { text: '第一版', link: '/v1' },
-          { text: '第二版', link: '/v2' },
-          { text: '未完成的测试版', link: '/v3' },
-          { text: '后来的故事', link: '/after-story' },
+          { text: '第一版', link: '/历史/第一版' },
+          { text: '第二版', link: '/历史/第二版' },
+          { text: '未完成的测试版', link: '/历史/未完成的测试版' },
         ],
       },
       {
         text: '数据',
         items: [
-          { text: '下载脱敏数据', link: '/download' },
-          { text: '如何使用？', link: '/usage' },
-          { text: '大家的作品', link: '/showcase' },
+          { text: '下载数据', link: '/数据/下载数据' },
+          { text: '如何使用', link: '/数据/如何使用' },
         ],
       },
       {
         text: '开发',
         items: [
-          { text: '成为一名开发者', link: '/developer' },
-          { text: '拥抱开源', link: '/open-source' },
+          { text: '成为一名开发者', link: '/开发/成为一名开发者' },
+          { text: '拥抱开源', link: '/开发/拥抱开源' },
         ],
       },
       {
