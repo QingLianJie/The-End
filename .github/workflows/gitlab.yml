@@ -17,6 +17,6 @@ jobs:
           fetch-depth: 0
       - uses: adambirds/sync-github-to-gitlab-action@v1.1.0
         with:
-          destination_repository: git@gitlab.com:Lifeni/Playground.git
+          destination_repository: git@gitlab.com:Lifeni/The-End.git
           destination_branch_name: main
           destination_ssh_key: ${{ secrets.GITLAB_SSH_KEY }}

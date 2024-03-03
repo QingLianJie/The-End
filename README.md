@@ -1,3 +1,3 @@
-### 清廉街 Playground
+### 清廉街 Docs
 
-> 测试地址：https://qing-dev.dist.run
+> 测试地址：https://docs.qing-dev.dist.run
