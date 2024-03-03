@@ -3,8 +3,9 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '清廉街',
+  lang: 'zh-CN',
   description: '不是结束。',
-  srcDir: 'src',
+  srcDir: './src',
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   themeConfig: {
     logo: '/favicon.svg',
