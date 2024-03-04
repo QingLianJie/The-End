@@ -9,11 +9,6 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   themeConfig: {
     logo: '/favicon.svg',
-    nav: [
-      { text: '历史', link: '/历史/第一版' },
-      { text: '数据', link: '/数据/下载数据' },
-      { text: '开发', link: '/开发/成为一名开发者' },
-    ],
     sidebar: [
       {
         text: '写在前面',

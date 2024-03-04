@@ -3,3 +3,7 @@
     MiSans, Source Han Sans SC, Noto Sans SC, system-ui, Roboto, emoji,
     sans-serif;
 }
+
+p {
+  text-align: justify;
+}
