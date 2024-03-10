@@ -11,6 +11,9 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-rc.44"
+    "vitepress": "1.0.0-rc.45"
+  },
+  "dependencies": {
+    "medium-zoom": "^1.1.0"
   }
 }
