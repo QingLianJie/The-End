@@ -1,19 +1,16 @@
 {
   "name": "the-end",
-  "displayName": "清廉街 The End",
+  "displayName": "清廉街",
   "version": "0.1.0",
-  "description": "清廉街，不再维护，但不是结束。",
+  "description": "好久不见。",
   "private": true,
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "docs:dev": "vitepress dev --host",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-rc.45"
-  },
-  "dependencies": {
-    "medium-zoom": "^1.1.0"
+    "vitepress": "1.3.1"
   }
 }
