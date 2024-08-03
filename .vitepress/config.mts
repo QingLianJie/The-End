@@ -7,5 +7,12 @@ export default defineConfig({
   description: '好久不见。',
   srcDir: './src',
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
-  themeConfig: { aside: false, outline: false },
+  themeConfig: {
+    logo: '/favicon.svg',
+    socialLinks: [{ icon: 'github', link: 'https://github.com/QingLianJie' }],
+    returnToTopLabel: '回到顶部',
+    darkModeSwitchLabel: '切换亮色/暗色主题',
+    aside: false,
+    outline: false,
+  },
 })

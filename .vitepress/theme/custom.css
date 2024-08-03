@@ -1,6 +1,7 @@
 :root {
-  --vp-font-family-base: Noto Serif, Source Han Serif SC, Cambria, Cochin,
-    Georgia, Times, 'Times New Roman', serif;
+  --vp-font-family-base: Inter Variable, Inter, -apple-system, HarmonyOS Sans SC,
+    MiSans, Source Han Sans SC, Noto Sans SC, system-ui, Roboto, emoji,
+    sans-serif;
   --vp-c-text-1: black;
 }
 
@@ -8,23 +9,39 @@
   --vp-c-text-1: rgba(255, 255, 245, 0.86);
 }
 
-.vp-doc.strong,
-.vp-doc.h1,
-.vp-doc.h2 {
-  font-weight: 700;
+.vp-doc strong,
+.vp-doc h1,
+.vp-doc h2 {
+  font-weight: 600;
 }
 
-p {
+.vp-doc p {
   text-align: justify;
 }
 
-.main img {
+.vp-doc img {
   border-radius: 8px;
-  border: solid 1px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--vp-c-divider);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
-.main h1 + blockquote {
-  margin: 0.5rem 0;
+.logo {
+  border-radius: 4px;
+  border: solid 1px var(--vp-c-divider);
+}
+
+.divider {
+  background-color: transparent !important;
+}
+
+.divider-line {
+  background-color: transparent !important;
+  border-bottom: solid 1px var(--vp-c-divider);
+}
+
+.VPContent {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .VPNav {
